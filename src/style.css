@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#navbar {
+  height: 10vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid grey;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
