@@ -1,19 +1,17 @@
 export default function printMe() {
   console.log("Yee Haw! I get called from load.js!");
 }
+import {loadHome} from './home.js';
 
- function loadPage(){
-
+ function loadNav(){
   const navBar = document.createElement('div')
-
   navBar.id = 'navbar'
 
-
-    const homeButton = document.createElement('button');
-    
+    const homeButton = document.createElement('button');    
     homeButton.classList.add('navButton');
     homeButton.textContent = 'Home';
-    
+    homeButton.addEventListener('click', loadHome
+    )
     
     const menuButton = document.createElement('button');
     menuButton.classList.add('navButton');
@@ -33,4 +31,6 @@ export default function printMe() {
     
   }
 
-export { loadPage }
+
+
+export { loadNav }
