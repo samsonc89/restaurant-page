@@ -1,4 +1,5 @@
 import printMe from "./modules/load.js";
+import "./style.css";
 
 function component() {
   const element = document.createElement("div");
@@ -12,4 +13,20 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+// document.body.appendChild(component());
+// const content = document.createElement("div");
+// content.id = "content";
+// content.innerHTML = `
+// <div id="header">
+//   <div id="navbar">
+//     <ul>
+//       <li>Home</li>
+//       <li>Menu</li>
+//       <li>Contact</li>
+//     </ul>
+//   </div>
+// </div>
+
+// `;
+
+// document.body.appendChild(content);
