@@ -1,5 +1,11 @@
-import printMe from "./modules/load.js";
+import printMe, { loadWrapper } from "./modules/load.js";
 import "./style.css";
+import {loadNav} from './modules/load.js';
+
+
+
+
+const content = document.querySelector('#content')
 
 function component() {
   const element = document.createElement("div");
@@ -9,11 +15,18 @@ function component() {
   btn.onclick = printMe;
 
   element.appendChild(btn);
+  
+
 
   return element;
 }
 
-// document.body.appendChild(component());
+content.prepend(loadNav());
+content.appendChild(component());
+content.appendChild(loadWrapper());
+
+
+
 // const content = document.createElement("div");
 // content.id = "content";
 // content.innerHTML = `
