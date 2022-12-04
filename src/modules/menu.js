@@ -6,7 +6,7 @@ function loadMenu (){
     const mainWrapper = document.querySelector('#main-wrapper')
     mainWrapper.textContent = "Menu testing"
 
-    return mainWrapper
+
 }
 
 export  {loadMenu}
