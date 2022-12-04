@@ -2,6 +2,9 @@ export default function printMe() {
   console.log("Yee Haw! I get called from load.js!");
 }
 import {loadHome} from './home.js';
+import {loadMenu} from './menu.js'
+
+
 
  function loadNav(){
   const navBar = document.createElement('div')
@@ -16,7 +19,7 @@ import {loadHome} from './home.js';
     const menuButton = document.createElement('button');
     menuButton.classList.add('navButton');
     menuButton.textContent = 'Menu';
-    
+    menuButton.addEventListener('click', loadMenu)
     
     const contactButton = document.createElement('button');
     contactButton.classList.add('navButton');
@@ -26,11 +29,20 @@ import {loadHome} from './home.js';
     navBar.appendChild(menuButton)
     navBar.appendChild(contactButton)
     
-
     return navBar
-    
+
   }
 
+  function loadWrapper (){
+
+    //clear current content 
 
 
-export { loadNav }
+    const mainWrapper = document.createElement('div')
+    mainWrapper.id = 'main-wrapper'
+    mainWrapper.textContent = "Helloooo there"
+
+    return mainWrapper
+}
+
+export { loadNav, loadWrapper }
