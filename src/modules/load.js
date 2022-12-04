@@ -3,6 +3,7 @@ export default function printMe() {
 }
 import {loadHome} from './home.js';
 import {loadMenu} from './menu.js'
+import {loadContact} from './contact.js'
 
 
 
@@ -24,6 +25,7 @@ import {loadMenu} from './menu.js'
     const contactButton = document.createElement('button');
     contactButton.classList.add('navButton');
     contactButton.textContent = 'Contact';
+    contactButton.addEventListener('click', loadContact);
     
     navBar.appendChild(homeButton)
     navBar.appendChild(menuButton)
