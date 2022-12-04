@@ -1,9 +1,11 @@
 function loadHome (){
-    const mainWrapper = document.createElement('div')
-    mainWrapper.id = 'main-wrapper'
-    mainWrapper.textContent = "Hello there"
 
-    return mainWrapper
+    //clear current content 
+
+
+    const mainWrapper = document.querySelector('#main-wrapper')
+    mainWrapper.textContent = "Home testing"
+
 }
 
 export  {loadHome}
