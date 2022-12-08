@@ -41,3 +41,7 @@ ul {
   max-width: 40%;
   max-height: auto;
 }
+
+#home-text {
+  white-space: pre-line;
+}
