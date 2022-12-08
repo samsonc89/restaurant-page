@@ -24,12 +24,14 @@ ul {
 }
 
 #main-wrapper {
-  width: 70vw;
-  height: 10vw;
-  max-height: 60vh;
+  width: 80vw;
+  min-height: 10vw;
   background-color: rgba(146, 146, 146, 0.5);
   margin: auto;
   margin-top: 5vh;
 }
 
-
+#home-image {
+  max-width: 40%;
+  max-height: auto;
+}
