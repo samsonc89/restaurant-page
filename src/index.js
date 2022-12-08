@@ -1,31 +1,12 @@
-import printMe, { loadWrapper } from "./modules/load.js";
+import { loadWrapper } from "./modules/load.js";
 import "./style.css";
-import {loadNav} from './modules/load.js';
+import { loadNav } from "./modules/load.js";
 
-
-
-
-const content = document.querySelector('#content')
-
-function component() {
-  const element = document.createElement("div");
-  const btn = document.createElement("button");
-
-  btn.innerHTML = "Click me and check the console!";
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-  
-
-
-  return element;
-}
+const content = document.querySelector("#content");
 
 content.prepend(loadNav());
-content.appendChild(component());
+
 content.appendChild(loadWrapper());
-
-
 
 // const content = document.createElement("div");
 // content.id = "content";
