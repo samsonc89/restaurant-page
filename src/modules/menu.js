@@ -1,5 +1,6 @@
 import galbijjimPic from "../galbijjim.png";
 import galbitangPic from "../galbitang.jpeg";
+import seolleongtangPic from "../seolleongtang.jpeg";
 
 function loadMenu() {
   //clear current content
@@ -51,8 +52,32 @@ function loadMenu() {
   galbitang.appendChild(galbitangText);
   galbitang.appendChild(galbitangImage);
 
+  const seolleongtang = document.createElement("div");
+  seolleongtang.id = "seolleongtang-wrapper";
+  seolleongtang.classList.add("menu-section-wrapper");
+
+  const seolleongtangImage = new Image();
+  seolleongtangImage.src = seolleongtangPic;
+  seolleongtangImage.style.width = "50%";
+
+  const seolleongtangText = document.createElement("div");
+  seolleongtangText.innerHTML = `<h3 class='menu-section-header'>SEOLLEONGTANG</h3>
+  <ol>
+<li>Cha Dol (Brisket Point) 차돌 설렁탕</li>
+<li>Yang Ji (Royal Brisket) 양지 설렁탕</li>
+<li>Doh Ga Nee (Ox Cartilage/Tendon) 도가니 설렁탕</li>
+<li>Kkori (Ox Tail) 꼬리 설렁탕</li>
+<li>Modeum (Combination: Chadol, Yangji, Dohganee, Kkori and Kalbi) 모듬 설렁탕</li>
+<li>Yuk Gae Jang (Spicy Beef Soup) 육개장</li>
+  </ol>
+  `;
+
+  seolleongtang.appendChild(seolleongtangImage);
+  seolleongtang.appendChild(seolleongtangText);
+
   menuWrapper.appendChild(galbijjim);
   menuWrapper.appendChild(galbitang);
+  menuWrapper.appendChild(seolleongtang);
 
   mainWrapper.appendChild(menuWrapper);
 }
