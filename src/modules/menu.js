@@ -41,7 +41,7 @@ function loadMenu() {
 
   const galbitangText = document.createElement("div");
   galbitangText.innerHTML = `<h3 class='menu-section-header'>GALBI TANG</h3>
-  <ol>
+  <ol start='4'>
 <li>Galbi Tang (Beef Rib Soup) 갈비탕</li>
 <li>Spicy Kalbi Tang (Spicy Beef Rib Soup) 매운 갈비탕</li>
 <li>Ttoek Kalbi Tang (Beef Rib Soup with Rice cake & Egg) 떡갈비탕</li>
@@ -62,7 +62,7 @@ function loadMenu() {
 
   const seolleongtangText = document.createElement("div");
   seolleongtangText.innerHTML = `<h3 class='menu-section-header'>SEOLLEONGTANG</h3>
-  <ol>
+  <ol start='8'>
 <li>Cha Dol (Brisket Point) 차돌 설렁탕</li>
 <li>Yang Ji (Royal Brisket) 양지 설렁탕</li>
 <li>Doh Ga Nee (Ox Cartilage/Tendon) 도가니 설렁탕</li>
