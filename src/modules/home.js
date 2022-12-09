@@ -1,6 +1,4 @@
-"use strict";
-
-import aboutImage from "../about-image.png";
+import aboutImage from "../about-image.jpg";
 
 function loadHome() {
   //clear current content
