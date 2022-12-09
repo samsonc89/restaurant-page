@@ -27,6 +27,13 @@ h2 {
   display: flex;
   gap: 10px;
 }
+button {
+  border: none;
+  background-color: white;
+}
+.selected {
+  border-bottom: 2px solid blue;
+}
 
 ul {
   display: flex;
