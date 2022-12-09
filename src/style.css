@@ -30,6 +30,9 @@ ol {
   /* display: inline-block; */
 }
 
+ol li {
+  margin-top: 5px;
+}
 #main-wrapper {
   width: 80vw;
   min-height: 10vw;
