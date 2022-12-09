@@ -9,12 +9,22 @@ html {
   background-size: contain;
 }
 #navbar {
-  height: 10vh;
+  max-height: 15vh;
+  padding: 3vh;
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid grey;
+  gap: 10px;
+}
+
+h2 {
+  font-size: 5vw;
+}
+#navBtns {
+  display: flex;
   gap: 10px;
 }
 
@@ -38,7 +48,7 @@ ol li {
   min-height: 10vw;
   background-color: rgba(222, 222, 222, 0.8);
   margin: auto;
-  margin-top: 5vh;
+  margin: 5vh auto;
 }
 
 #home-content {
